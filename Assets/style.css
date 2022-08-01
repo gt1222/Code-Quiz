@@ -1,0 +1,49 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: #272643;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    border-bottom: solid 10px purple;
+}
+
+#score {
+    border: solid black 2px;
+    border-radius: 20px;
+    margin: 20px 5%;
+    font-size: 125%;
+    padding: 10px;
+}
+
+.questions-div {
+    border: solid #243153 3px;
+    border-radius: 10px;
+    margin: 50px 10% 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    border: solid black 2px;
+    border-radius: 20px;
+    padding: 10px 40px;
+    font-size: 125%;
+    font-weight: bolder;
+}
+
+footer {
+    text-align: center;
+    font-size: 150%;
+}
+
+button:hover {
+    box-shadow: inset 0px 0px 0px, 0 0 15px #243153;
+}

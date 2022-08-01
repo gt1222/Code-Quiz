@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <!-- making document responsive and scaling to screen -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- linking style sheet -->
+        <link rel="stylesheet" type="text/css" href="./Assets/style.css" />
+        <!-- this is the title -->
+        <title>Code Quiz</title>
+    </head>
+
+    <body>
+        <header>
+            <!-- highscore button -->
+            <button id ="score">View High Score</button>
+        </header>
+
+        <main>
+            <!-- section where quiz and timer would be -->
+            <section class = "questions-div">
+                <h1>Coding Quiz Challenge</h1>
+                <p>Answer the following questions within the time limit. Keep in mind that incorrect ansers will penalize time by reducing it by 5 seconds</p>
+                <button id="startquiz">Start</button>
+                <div class="timer">Time: 0</div>
+            </section>
+
+
+        </main>
+        <!-- display correct/incorrect -->
+        <footer id="answer"></footer>
+        <!-- linking javascript -->
+        <script src="./Assets/script.js"></script>
+    </body>
+</html>
