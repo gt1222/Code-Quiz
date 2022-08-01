@@ -29,6 +29,16 @@ header {
     align-self: center;
 }
 
+#startquiz {
+    margin: 20px 5%;
+    align-self: center;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
 button {
     background-color: purple;
     color: white;
