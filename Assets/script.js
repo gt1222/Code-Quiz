@@ -1,5 +1,5 @@
 //click start button timer starts and presented with questions
-
+var startBtn = document.getElementById("startquiz")
 //answer question am presented with another question
 var questions = [
     { question: "Commonly used data types DO NOT include:", 
@@ -23,23 +23,33 @@ var questions = [
     answer: "d"}
 ]
 
-//anser question incorrectly time is subtracted from clock
+//answer question incorrectly time is subtracted from clock
 
 //all questions answered or timer 0 game is over
 
 //game over save initials and score
 
-var timerElement = document.querySelector(".timer-count")
+var timeLeft = document.getElementById ("timer");
+var totalTime = 60;
+var questionNumber = 0;
+var quesitonCount = 1;
 
-var timer;
-var timerCount;
+function countdown () {
+    var timerInterval = setInterval(function() {
+        totalTime --;
+        timeLeft.textContent = totalTime;
 
-function startTimer() {
-    timer = setInterval(function() {
-        timerCount--;
-        timerElement.textContent = timerCount;
-        if (timerCount >= 0) {
-            clearInterval(timer);
-        }
-    }, 1000);
+    if (totalTime <= 0) {
+        clearInterval(timerInterval);
+        timeLeft.textContent = "Time is up!"
+    } else if (quesitonCount >= questions.length +1) {
+        clearInterval(timerInterval);
+    }
+    }, 1000)
 }
+
+function startQuiz () {
+    countdown ();
+}
+
+startBtn.addEventListener("click", startQuiz)
